@@ -1,0 +1,27 @@
+{
+  "name": "ez-socket",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --require babel-register.js",
+    "build": "babel --experimental --out-dir lib src",
+    "prepublish": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ez-error": "0.0.3",
+    "ez-validator": "0.0.5",
+    "inflection": "^1.7.1",
+    "lodash": "^3.8.0"
+  },
+  "devDependencies": {
+    "bluebird": "^2.9.25",
+    "express": "^4.12.3",
+    "ez-ctrl": "^1.0.0-rc.0.4",
+    "should": "^6.0.1",
+    "socket.io": "^1.3.5",
+    "socket.io-client": "^1.3.5"
+  }
+}
